@@ -1,0 +1,64 @@
+/* Layout styling */
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+}
+
+article {
+  flex: 2;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+aside {
+  flex: 1;
+  background-color: #eaeaea;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Header styling */
+header ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 15px;
+  background-color: #333;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Footer styling */
+footer {
+  width: 100%;
+  padding: 15px;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+}
