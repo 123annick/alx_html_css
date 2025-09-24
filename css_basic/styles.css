@@ -1,5 +1,5 @@
 /* Layout styling */
-main {
+.works_on_smartphone {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -61,4 +61,21 @@ th, td {
 
 th {
   background-color: #f0f0f0;
+}
+
+/* Responsive layout for smartphones */
+@media screen and (max-width: 768px) {
+  .works_on_smartphone {
+    flex-direction: column;
+  }
+
+  article, aside {
+    width: 100%;
+    flex: none;
+  }
+
+  header ul {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
