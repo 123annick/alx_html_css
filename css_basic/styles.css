@@ -28,12 +28,19 @@ header ul {
   list-style: none;
   padding: 15px;
   background-color: #333;
+  align-items: center;
 }
 
 header a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+}
+
+/* Logo styling */
+.logo {
+  font-size: 24px;
+  color: gold;
 }
 
 /* Footer styling */
@@ -77,5 +84,10 @@ th {
   header ul {
     flex-direction: column;
     gap: 10px;
+  }
+
+  .logo {
+    font-size: 28px;
+    margin-bottom: 10px;
   }
 }
