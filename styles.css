@@ -156,45 +156,4 @@ nav a {
 .video-card {
   background-color: white;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  width: 220px;
-  padding: 20px;
-  text-align: left;
-}
-
-.video-card img {
-  width: 100%;
-  border-radius: 6px;
-  margin-bottom: 15px;
-}
-
-.video-card h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #7c4dff;
-}
-
-.video-card p {
-  font-size: 14px;
-  margin-bottom: 10px;
-  color: #555;
-}
-
-.rating {
-  font-size: 16px;
-  color: #ff9800;
-}
-
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
-  .banner-content h1 {
-    font-size: 36px;
-  }
-
-  .profiles {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .quote-container blockquote {
-    font-size: 
+  box-shadow: 0 2px 6px rgba(0,0
