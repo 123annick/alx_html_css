@@ -1,98 +1,106 @@
-/* Layout styling */
-.works_on_smartphone {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
-}
-
-article {
-  flex: 2;
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-}
-
-aside {
-  flex: 1;
-  background-color: #eaeaea;
-  padding: 20px;
-  border-radius: 8px;
-}
-
 /* Header styling */
-header ul {
+header {
+  background-color: #fff;
+  padding: 20px;
+}
+
+nav ul {
   display: flex;
-  gap: 20px;
-  list-style: none;
-  padding: 15px;
-  background-color: #333;
+  justify-content: space-between;
   align-items: center;
+  list-style: none;
 }
 
-header a {
-  color: white;
+nav a {
   text-decoration: none;
+  color: #333;
   font-weight: bold;
+  margin-left: 20px;
 }
 
-/* Logo styling */
 .logo {
   font-size: 24px;
-  color: gold;
+  font-weight: bold;
+  color: #7c4dff;
 }
 
-/* Footer styling */
-footer {
-  width: 100%;
-  padding: 15px;
-  background-color: #222;
+/* Banner styling */
+.banner {
+  background: url('images/banner.jpg') center/cover no-repeat;
   color: white;
   text-align: center;
-  margin-top: 20px;
+  padding: 60px 20px;
 }
 
-/* Typography and links */
-h1 {
-  color: #0055a5;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 10px;
-  text-align: center;
-}
-
-p {
-  font-size: 16px;
+.banner-content h1 {
+  font-size: 48px;
   margin-bottom: 10px;
 }
 
-a {
-  color: #0077cc;
-  text-decoration: none;
+.banner-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
-a:hover {
-  text-decoration: underline;
+.banner-content button {
+  background-color: #7c4dff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-/* Responsive layout for smartphones */
+.banner-content .tagline {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #ff9800;
+}
+
+/* Profile cards */
+.profiles {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.profile-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  width: 200px;
+}
+
+.profile-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile-card h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+.profile-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Responsive adjustments */
 @media screen and (max-width: 768px) {
-  .works_on_smartphone {
+  .banner-content h1 {
+    font-size: 36px;
+  }
+
+  .profiles {
     flex-direction: column;
-  }
-
-  article, aside {
-    width: 100%;
-    flex: none;
-  }
-
-  header ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .logo {
-    font-size: 28px;
-    margin-bottom: 10px;
+    align-items: center;
   }
 }
