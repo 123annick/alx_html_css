@@ -93,6 +93,46 @@ nav a {
   color: #666;
 }
 
+/* Quote section styling */
+.quote-section {
+  background-color: #7c4dff;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+}
+
+.quote-container hr {
+  width: 60px;
+  border: 2px solid black;
+  margin: 0 auto 30px;
+}
+
+.quote-container img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.quote-container blockquote {
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quote-author {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.quote-role {
+  font-size: 14px;
+  color: #ddd;
+}
+
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
   .banner-content h1 {
@@ -102,5 +142,9 @@ nav a {
   .profiles {
     flex-direction: column;
     align-items: center;
+  }
+
+  .quote-container blockquote {
+    font-size: 18px;
   }
 }
