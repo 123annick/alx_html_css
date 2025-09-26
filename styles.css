@@ -1,4 +1,4 @@
-/* Layout */
+/* Layout styling */
 .works_on_smartphone {
   display: flex;
   flex-direction: row;
@@ -9,19 +9,19 @@
 
 article {
   flex: 2;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 8px;
 }
 
 aside {
   flex: 1;
-  background-color: #eee;
+  background-color: #eaeaea;
   padding: 20px;
   border-radius: 8px;
 }
 
-/* Header */
+/* Header styling */
 header ul {
   display: flex;
   gap: 20px;
@@ -37,12 +37,13 @@ header a {
   font-weight: bold;
 }
 
+/* Logo styling */
 .logo {
   font-size: 24px;
   color: gold;
 }
 
-/* Footer */
+/* Footer styling */
 footer {
   width: 100%;
   padding: 15px;
@@ -52,7 +53,29 @@ footer {
   margin-top: 20px;
 }
 
-/* Responsive */
+/* Typography and links */
+h1 {
+  color: #0055a5;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive layout for smartphones */
 @media screen and (max-width: 768px) {
   .works_on_smartphone {
     flex-direction: column;
