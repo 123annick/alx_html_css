@@ -1,0 +1,75 @@
+/* Layout */
+.works_on_smartphone {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+article {
+  flex: 2;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+aside {
+  flex: 1;
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Header */
+header ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 15px;
+  background-color: #333;
+  align-items: center;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logo {
+  font-size: 24px;
+  color: gold;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  padding: 15px;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .works_on_smartphone {
+    flex-direction: column;
+  }
+
+  article, aside {
+    width: 100%;
+    flex: none;
+  }
+
+  header ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+}
